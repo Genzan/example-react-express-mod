@@ -26,11 +26,11 @@ const getData = async (_user) => {
 const updateUser = async (_userAddress) => {
   let creds = await usersObj.loginUser(_userAddress);
   console.log("CREDS",creds);
-  /*
+  
   let text = '{ "perfilHash":"PRUEBA2"}'; 
   let params = JSON.parse(text); 
   let response = await usersObj.updateUser(creds, params);
-
+/*
   let text = '{ "num":5}'; 
   let params = JSON.parse(text); 
   let response = await compObj.createEmpresa(creds, params);
@@ -42,11 +42,11 @@ const updateUser = async (_userAddress) => {
   let text = '{ "empresaHash":"Empresa Patito", "contractAddress":"0x19B21Ee7A3Ba77fDD6DD2CAbbA7e4DcF5A875609"}'; 
   let params = JSON.parse(text); 
   let response = await compObj.updateEmpresa(creds, params);
-  */
+  
   let text = '{"contractAddress":"0x19B21Ee7A3Ba77fDD6DD2CAbbA7e4DcF5A875609"}'; 
   let params = JSON.parse(text); 
   let response = await compObj.getEmpresaHash(creds, params);
-  
+  */
   console.log("response",response);
 }
 

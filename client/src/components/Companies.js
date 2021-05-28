@@ -209,7 +209,7 @@ export default class APICompanies {
         return result;
     };
 
-    getEmpresaHash = async(creds, params) => {
+    getEmpresaHash = async(params) => {
         console.log("<getEmpresaHash>");
         const myContract = new web3.eth.Contract(
             JSON.parse(contractABI_Company),
@@ -220,7 +220,7 @@ export default class APICompanies {
         return response;
     };
 
-    getPendingAccounts = async(creds, params) => {
+    getPendingAccounts = async(params) => {
         console.log("<getPendingAccounts>");
         const myContract = new web3.eth.Contract(
             JSON.parse(contractABI_Company),
@@ -231,7 +231,7 @@ export default class APICompanies {
         return response;
     };
 
-    isAccountAllowed = async(creds, params) => {
+    isAccountAllowed = async(params) => {
         console.log("<isAccountAllowed>");
         const myContract = new web3.eth.Contract(
             JSON.parse(contractABI_Company),
